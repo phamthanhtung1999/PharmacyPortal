@@ -1,0 +1,6 @@
+
+@mixin ScreenWidth ($i) {
+  @media screen and (min-width : $i) {
+    @content 
+  }
+}
