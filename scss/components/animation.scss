@@ -1,11 +1,11 @@
 .tilt__angle {
   transform:skewY(-6deg);
-  display: flex;
-  justify-content: space-between;
+  background-color: white;
 }
 .diagonalline__short {
   width: 160px;
   height: 40px;
+  margin-left: 70px;
 }
 .diagonalline__long {
   width: 287px;
@@ -15,5 +15,10 @@
   background-color: #80e9ff;
 }
 .diagonalline__darkblue {
+  background-color: #7073ff;
+}
+.diagonalline__intersection {
   background-color: #0048e5;
+  height: 15px;
+  width: 100%;
 }

@@ -227,6 +227,8 @@ a{
     max-width: 1366px;
   }
   .content__header {
-    max-width: 1366px;
+    .content__limit {
+      max-width: 1366px;
+    }
   }
 }
