@@ -309,6 +309,33 @@ a {
 .platform .platform__content .body__flatform .link__button:hover {
   background-color: #0a2540;
 }
+.platform .platform__content .footer__flatform .grid__table {
+  display: grid;
+  gap: 35px;
+  grid-template-areas: "bottomleft bottomleft topleft topleft topright topright" "bottomleft bottomleft topcenter topcenter topcenter topcenter" "bottomright bottomright bottomright bottomright bottomright bottomright" "bottomright bottomright bottomright bottomright bottomright bottomright";
+  background-color: #2196f3;
+}
+.platform .platform__content .footer__flatform .grid__table .item__table {
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+}
+.platform .platform__content .footer__flatform .item1 {
+  grid-area: topleft;
+}
+.platform .platform__content .footer__flatform .item2 {
+  grid-area: topcenter;
+}
+.platform .platform__content .footer__flatform .item3 {
+  grid-area: topright;
+}
+.platform .platform__content .footer__flatform .item4 {
+  grid-area: bottomleft;
+}
+.platform .platform__content .footer__flatform .item5 {
+  grid-area: bottomright;
+}
 
 .platform__limit {
   max-width: 77.22222222vw;
@@ -327,9 +354,18 @@ a {
   display: grid;
   row-gap: 32px;
   align-items: flex-start;
-  grid-template-columns: repeat(2, 1fr);
 }
 
+@media screen and (min-width: 768px) {
+  .column__layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .platform .platform__content .footer__flatform .grid__table {
+    grid-template-areas: "topleft topleft topcenter topcenter topcenter topcenter topright topright" "bottomleft bottomleft topcenter topcenter topcenter topcenter topright topright" "bottomleft bottomleft bottomright bottomright bottomright bottomright bottomright bottomright" "bottomleft bottomleft bottomright bottomright bottomright bottomright bottomright bottomright";
+  }
+}
 @media screen and (min-width: 1440px) {
   .platform__limit {
     max-width: 1180px;
