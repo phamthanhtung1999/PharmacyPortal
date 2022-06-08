@@ -314,6 +314,7 @@ a {
   gap: 35px;
   grid-template-areas: "bottomleft bottomleft topleft topleft topright topright" "bottomleft bottomleft topcenter topcenter topcenter topcenter" "bottomright bottomright bottomright bottomright bottomright bottomright" "bottomright bottomright bottomright bottomright bottomright bottomright";
   background-color: #2196f3;
+  padding: 10px;
 }
 .platform .platform__content .footer__flatform .grid__table .item__table {
   background-color: white;
