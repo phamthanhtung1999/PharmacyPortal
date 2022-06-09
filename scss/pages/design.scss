@@ -1,6 +1,7 @@
 .design {
   position: relative;
   height: 1000px;
+  display: flex;
   .design__skew {
     position: absolute;
     height: 100%;
@@ -102,6 +103,15 @@
         }
       }
     }
+  }
+  .background__left {
+    width: 50%;
+    height: 100%;
+    background-color: #f6f9fc;
+  }
+  .background__right {
+    width: 50%;
+    height: 100%;
   }
 }
 @include ScreenWidth(1440px) {

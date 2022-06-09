@@ -380,6 +380,7 @@ a {
 .design {
   position: relative;
   height: 1000px;
+  display: flex;
 }
 .design .design__skew {
   position: absolute;
@@ -478,6 +479,15 @@ a {
 }
 .design .design__content .link__section a:hover {
   color: #fff;
+}
+.design .background__left {
+  width: 50%;
+  height: 100%;
+  background-color: #f6f9fc;
+}
+.design .background__right {
+  width: 50%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1440px) {
