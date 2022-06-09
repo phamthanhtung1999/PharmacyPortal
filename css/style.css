@@ -379,8 +379,6 @@ a {
 }
 .design {
   position: relative;
-  height: 1000px;
-  display: flex;
 }
 .design .design__skew {
   position: absolute;
@@ -390,6 +388,7 @@ a {
   left: 0;
   background-color: #0a2540;
   transform: skewY(-6deg);
+  z-index: 1;
 }
 .design .content__limit {
   max-width: 77.22222222vw;
@@ -408,11 +407,8 @@ a {
   align-items: flex-start;
 }
 .design .design__content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
+  position: relative;
+  z-index: 10;
 }
 .design .design__content .caption__section {
   color: #00d4ff;
@@ -480,12 +476,20 @@ a {
 .design .design__content .link__section a:hover {
   color: #fff;
 }
-.design .background__left {
+.design .custom__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.design .custom__background .background__left {
   width: 50%;
   height: 100%;
   background-color: #f6f9fc;
 }
-.design .background__right {
+.design .custom__background .background__right {
   width: 50%;
   height: 100%;
 }
@@ -500,6 +504,31 @@ a {
     max-width: 1366px;
   }
 }
+.technology {
+  height: 500px;
+  background-color: yellow;
+  position: relative;
+  border: 1px solid red;
+}
+.technology .technology__skew {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transform: skewY(-6deg);
+  border: 1px solid blue;
+}
+.technology .technology__skew .skew__animateleft {
+  width: 50%;
+  height: 100%;
+}
+.technology .technology__skew .skew__animateright {
+  width: 50%;
+  height: 100%;
+}
+
 .footer {
   position: relative;
   width: 100%;

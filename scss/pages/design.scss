@@ -1,7 +1,5 @@
 .design {
   position: relative;
-  height: 1000px;
-  display: flex;
   .design__skew {
     position: absolute;
     height: 100%;
@@ -10,6 +8,7 @@
     left: 0;
     background-color: #0a2540;
     transform: skewY(-6deg);
+    z-index: 1;
   }
   .content__limit {
     max-width: calc(100vw * 0.7722222222);
@@ -28,11 +27,8 @@
     }
   }
   .design__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
+    position: relative;
+    z-index: 10;
     .caption__section {
       color: #00d4ff;
       font-weight: 700;
@@ -104,14 +100,22 @@
       }
     }
   }
-  .background__left {
-    width: 50%;
+  .custom__background {
+    width: 100%;
     height: 100%;
-    background-color: #f6f9fc;
-  }
-  .background__right {
-    width: 50%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    .background__left {
+      width: 50%;
+      height: 100%;
+      background-color: #f6f9fc;
+    }
+    .background__right {
+      width: 50%;
+      height: 100%;
+    }
   }
 }
 @include ScreenWidth(1440px) {
