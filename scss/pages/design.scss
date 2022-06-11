@@ -49,6 +49,9 @@
       font-weight: 300;
       letter-spacing: 0.2px;
     }
+    .image__design {
+      width: 220px;
+    }
     .button__section {
       a {
         padding: 3px 16px 6px 16px;
@@ -115,6 +118,15 @@
     .background__right {
       width: 50%;
       height: 100%;
+    }
+  }
+}
+@include ScreenWidth(450px) {
+  .design {
+    .design__content {
+      .image__design {
+        width: 360px;
+      }
     }
   }
 }
