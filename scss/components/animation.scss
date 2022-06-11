@@ -42,15 +42,21 @@
   width: 100%;
   transform: skewY(-6deg);
   display: flex;
-  justify-content: end;
+  flex-direction: row-reverse;
+  overflow: hidden;
   .wrap__skew {
     position: relative;
     width: calc(((100vw - (100vw * 0.722222222)) / 2) + (((100vw * 0.722222222) / 2) * 0.25));
   }
   .diagonalline__short {
-    position: absolute;
-    left: 50px;
+    margin-left: 50px;
     z-index: 10;
     transform: translateY(-15px);
+  }
+}
+
+@include ScreenWidth(1920px) {
+  .skew__topright {
+    overflow: unset;
   }
 }

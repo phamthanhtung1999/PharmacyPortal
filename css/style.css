@@ -53,19 +53,24 @@ body {
   width: 100%;
   transform: skewY(-6deg);
   display: flex;
-  justify-content: end;
+  flex-direction: row-reverse;
+  overflow: hidden;
 }
 .skew__topright .wrap__skew {
   position: relative;
   width: 22.916666675vw;
 }
 .skew__topright .diagonalline__short {
-  position: absolute;
-  left: 50px;
+  margin-left: 50px;
   z-index: 10;
   transform: translateY(-15px);
 }
 
+@media screen and (min-width: 1920px) {
+  .skew__topright {
+    overflow: unset;
+  }
+}
 .header {
   position: relative;
   width: 100vw;
