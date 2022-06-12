@@ -13,7 +13,7 @@
   .content__limit {
     max-width: calc(100vw * 0.7722222222);
     margin: 0px auto;
-    padding: 180px 0px 220px 0px;
+    padding: 90px 0px 110px 0px;
     .column__layout {
       display: grid;
       row-gap: 32px;
@@ -130,6 +130,14 @@
     }
   }
 }
+@include ScreenWidth(768px) {
+  .design {
+    .content__limit {
+      padding: 180px 0px 220px 0px;
+    }
+  }
+}
+
 @include ScreenWidth(1440px) {
   .design {
     .content__limit {

@@ -420,7 +420,7 @@ a {
 .platform__limit {
   max-width: 77.22222222vw;
   margin: auto;
-  padding: 128px 0 256px;
+  padding: 64px 0 128px;
 }
 
 .row__layout {
@@ -439,6 +439,10 @@ a {
 @media screen and (min-width: 768px) {
   .column__layout {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .platform__limit {
+    padding: 128px 0 256px;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -472,7 +476,7 @@ a {
 .design .content__limit {
   max-width: 77.22222222vw;
   margin: 0px auto;
-  padding: 180px 0px 220px 0px;
+  padding: 90px 0px 110px 0px;
 }
 .design .content__limit .column__layout {
   display: grid;
@@ -581,6 +585,11 @@ a {
     width: 360px;
   }
 }
+@media screen and (min-width: 768px) {
+  .design .content__limit {
+    padding: 180px 0px 220px 0px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .design .content__limit {
     max-width: 1180px;
@@ -608,7 +617,7 @@ a {
   position: relative;
   max-width: 77.22222222vw;
   margin: 0 auto;
-  padding: 255px 0;
+  padding: 125px 0;
 }
 .technology__content .gridRow {
   display: grid;
@@ -682,6 +691,11 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (min-width: 768px) {
+  .technology__content {
+    padding: 255px 0;
+  }
+}
 @media screen and (min-width: 900px) {
   .technology__content .gridRow .technology__header {
     grid-template-columns: 3fr 1fr;
@@ -729,7 +743,7 @@ a {
   z-index: 50;
   max-width: 77.22222222vw;
   margin: 0 auto;
-  padding: 255px 0;
+  padding: 125px 0;
 }
 .globe .globe__content .gridRow {
   display: grid;
@@ -803,6 +817,11 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+@media screen and (min-width: 768px) {
+  .globe__content {
+    padding: 255px 0;
+  }
+}
 @media screen and (min-width: 900px) {
   .globe__content .gridRow .globe__header {
     grid-template-columns: 2fr 2fr;
@@ -825,7 +844,7 @@ a {
   }
 }
 .contact .contact__limit {
-  padding: 128px 0 300px 0;
+  padding: 64px 0 150px 0;
   max-width: 72.2222222vw;
   margin: auto;
 }
@@ -939,6 +958,11 @@ a {
     padding: 0 32px 0 16px;
   }
 }
+@media screen and (min-width: 768px) {
+  .contact .contact__limit {
+    padding: 128px 0 300px 0;
+  }
+}
 @media screen and (min-width: 900px) {
   .contact .grid__table {
     grid-template-columns: 2fr repeat(2, 1fr);
@@ -964,7 +988,7 @@ a {
 }
 .footer .contain__footer {
   max-width: 77.22222222vw;
-  padding: 250px 0 128px;
+  padding: 125px 0 64px;
   display: grid;
   margin: auto;
   grid: auto/repeat(2, 1fr);
@@ -1000,6 +1024,11 @@ a {
   grid: -webkit-min-content/auto;
 }
 
+@media screen and (min-width: 768px) {
+  .footer .contain__footer {
+    padding: 250px 0 128px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .footer .contain__footer {
     max-width: 1180px;

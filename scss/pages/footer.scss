@@ -4,7 +4,7 @@
 
   .contain__footer {
     max-width: calc(100vw * 0.7722222222);
-    padding: 250px 0 128px;
+    padding: 125px 0 64px;
     display: grid;
     margin: auto;
     grid: auto/repeat(2, 1fr);
@@ -40,7 +40,13 @@
     }
   }
 }
-
+@include ScreenWidth(768px) {
+  .footer {
+    .contain__footer {
+      padding: 250px 0 128px;
+    }
+  }
+}
 @include ScreenWidth(1440px) {
   .footer {
     .contain__footer {

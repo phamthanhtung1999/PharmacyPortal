@@ -14,7 +14,7 @@
   position: relative;
   max-width: calc(100vw * 0.7722222222);
   margin: 0 auto;
-  padding: 255px 0;
+  padding: 125px 0;
   .gridRow {
     display: grid;
     grid: auto/minmax(0, 1fr);
@@ -92,6 +92,11 @@
         grid-template-columns: repeat(2, 1fr);
       }
     }
+  }
+}
+@include ScreenWidth(768px) {
+  .technology__content {
+    padding: 255px 0;
   }
 }
 @include ScreenWidth(900px) {

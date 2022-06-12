@@ -1,6 +1,6 @@
 .contact {
   .contact__limit {
-    padding: 128px 0 300px 0;
+    padding: 64px 0 150px 0;
     max-width: calc(100vw * 0.722222222);
     margin: auto;
   }
@@ -118,6 +118,13 @@
       .table__content {
         padding: 0 32px 0 16px;
       }
+    }
+  }
+}
+@include ScreenWidth(768px) {
+  .contact {
+    .contact__limit {
+      padding: 128px 0 300px 0;
     }
   }
 }

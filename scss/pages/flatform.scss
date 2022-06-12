@@ -89,7 +89,7 @@
 .platform__limit {
   max-width: calc(100vw * 0.7722222222);
   margin: auto;
-  padding: 128px 0 256px;
+  padding: 64px 0 128px;
 }
 .row__layout {
   display: grid;
@@ -106,6 +106,9 @@
 @include ScreenWidth(768px) {
   .column__layout {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .platform__limit {
+    padding: 128px 0 256px;
   }
 }
 @include ScreenWidth(1366px) {
