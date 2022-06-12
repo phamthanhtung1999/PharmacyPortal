@@ -27,7 +27,7 @@
       .copy__footer {
         display: flex;
         align-items: center;
-        cursor: pointer;
+
         .cta__button {
           padding: 5px 16px;
           border-radius: 16.5px;
@@ -36,6 +36,8 @@
         }
         .start__now {
           background-color: #635bff;
+          cursor: pointer;
+          transition: all 0.5s;
           a {
             color: #fff;
           }
@@ -44,9 +46,15 @@
           }
         }
         .contact__sale {
-          color: #635bff;
+          cursor: pointer;
+          transition: all 0.5s;
           a {
-            color: #0a2540;
+            color: #635bff;
+          }
+          &:hover {
+            a {
+              color: #0a2540;
+            }
           }
         }
       }

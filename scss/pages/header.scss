@@ -145,33 +145,34 @@ a {
     padding: 50px 0px 120px 0px;
   }
   .content__left {
+    padding: 0 0 50px 0;
     display: grid;
     row-gap: 32px;
     font-family: 'sohne-var', 'Helvetica Neue', 'Arial', sans-serif;
     .title {
       letter-spacing: -0.04em;
       line-height: 1.04;
-      font-size: 60px;
+      font-size: 45px;
       font-weight: 700;
       color: #3a3a3a;
     }
     .copy__body {
-      padding: 0 32px 0 16px;
       font-size: 18px;
       color: #425466;
       font-weight: 300;
       letter-spacing: 0.2px;
     }
     .copy__footer {
-      padding: 0 32px 0 16px;
       display: flex;
       align-items: center;
-      cursor: pointer;
+
       .cta__button {
         padding: 5px 16px;
         border-radius: 16.5px;
         font-weight: 700;
         outline: none;
+        cursor: pointer;
+        transition: all 0.2s;
         &:hover {
           transform: scale(1.1);
         }
@@ -213,6 +214,15 @@ a {
 @include ScreenWidth(768px) {
   .header {
     .content__header {
+      .content__left {
+        padding: 0;
+        .copy__body {
+          padding: 0 32px 0 16px;
+        }
+        .copy__footer {
+          padding: 0 32px 0 16px;
+        }
+      }
       .content__right {
         .copy_imagephone {
           margin-left: 100px;
@@ -235,6 +245,20 @@ a {
         }
       }
     }
+  }
+  .backgroundSkew {
+    top: calc((0.2125565617 * 50vw) * -1);
+    height: auto;
+  }
+}
+@include ScreenWidth(768px) {
+  .navBar {
+    max-width: 90vw;
+  }
+}
+@include ScreenWidth(900px) {
+  .navBar {
+    max-width: calc(100vw * 0.7722222222);
   }
 }
 @include ScreenWidth(1440px) {

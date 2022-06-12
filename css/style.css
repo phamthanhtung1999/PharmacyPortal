@@ -3,6 +3,10 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  padding: 0;
+}
+
 .tilt__angle {
   transform: skewY(-6deg);
   background-color: white;
@@ -217,6 +221,7 @@ a {
   padding: 50px 0px 120px 0px;
 }
 .content__header .content__left {
+  padding: 0 0 50px 0;
   display: grid;
   row-gap: 32px;
   font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
@@ -224,28 +229,27 @@ a {
 .content__header .content__left .title {
   letter-spacing: -0.04em;
   line-height: 1.04;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 700;
   color: #3a3a3a;
 }
 .content__header .content__left .copy__body {
-  padding: 0 32px 0 16px;
   font-size: 18px;
   color: #425466;
   font-weight: 300;
   letter-spacing: 0.2px;
 }
 .content__header .content__left .copy__footer {
-  padding: 0 32px 0 16px;
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .content__header .content__left .copy__footer .cta__button {
   padding: 5px 16px;
   border-radius: 16.5px;
   font-weight: 700;
   outline: none;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 .content__header .content__left .copy__footer .cta__button:hover {
   transform: scale(1.1);
@@ -279,6 +283,15 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .header .content__header .content__left {
+    padding: 0;
+  }
+  .header .content__header .content__left .copy__body {
+    padding: 0 32px 0 16px;
+  }
+  .header .content__header .content__left .copy__footer {
+    padding: 0 32px 0 16px;
+  }
   .header .content__header .content__right .copy_imagephone {
     margin-left: 100px;
   }
@@ -291,6 +304,21 @@ a {
     font-size: 90px;
     font-weight: 700;
     color: #3a3a3a;
+  }
+
+  .backgroundSkew {
+    top: -10.627828085vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navBar {
+    max-width: 90vw;
+  }
+}
+@media screen and (min-width: 900px) {
+  .navBar {
+    max-width: 77.22222222vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -826,7 +854,6 @@ a {
 .contact .grid__table .table__header .copy__footer {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .contact .grid__table .table__header .copy__footer .cta__button {
   padding: 5px 16px;
@@ -836,6 +863,8 @@ a {
 }
 .contact .grid__table .table__header .copy__footer .start__now {
   background-color: #635bff;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .contact .grid__table .table__header .copy__footer .start__now a {
   color: #fff;
@@ -844,9 +873,13 @@ a {
   background-color: #0a2540;
 }
 .contact .grid__table .table__header .copy__footer .contact__sale {
-  color: #635bff;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 .contact .grid__table .table__header .copy__footer .contact__sale a {
+  color: #635bff;
+}
+.contact .grid__table .table__header .copy__footer .contact__sale:hover a {
   color: #0a2540;
 }
 .contact .grid__table .table__content {
