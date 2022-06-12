@@ -224,8 +224,7 @@ a {
 .content__header .content__left .title {
   letter-spacing: -0.04em;
   line-height: 1.04;
-  margin-top: 100px;
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
   color: #3a3a3a;
 }
@@ -277,9 +276,23 @@ a {
 }
 .content__header .content__right .copy_imagephone {
   position: relative;
-  margin-left: 100px;
 }
 
+@media screen and (min-width: 768px) {
+  .header .content__header .content__right .copy_imagephone {
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header .content__header .content__left .title {
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+    margin-top: 100px;
+    font-size: 90px;
+    font-weight: 700;
+    color: #3a3a3a;
+  }
+}
 @media screen and (min-width: 1440px) {
   .navBar {
     max-width: 1180px;
@@ -783,10 +796,138 @@ a {
     max-width: 1336px;
   }
 }
+.contact .contact__limit {
+  padding: 128px 0 300px 0;
+  max-width: 72.2222222vw;
+  margin: auto;
+}
+.contact .grid__table {
+  display: grid;
+  row-gap: 32px;
+  align-items: flex-start;
+}
+.contact .grid__table .table__header {
+  display: grid;
+  row-gap: 24px;
+  padding: 0 16px;
+}
+.contact .grid__table .table__header .title {
+  line-height: 1.04;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0a2540;
+}
+.contact .grid__table .table__header .copy__body {
+  font-size: 18px;
+  color: #425466;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+.contact .grid__table .table__header .copy__footer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.contact .grid__table .table__header .copy__footer .cta__button {
+  padding: 5px 16px;
+  border-radius: 16.5px;
+  font-weight: 700;
+  outline: none;
+}
+.contact .grid__table .table__header .copy__footer .start__now {
+  background-color: #635bff;
+}
+.contact .grid__table .table__header .copy__footer .start__now a {
+  color: #fff;
+}
+.contact .grid__table .table__header .copy__footer .start__now:hover {
+  background-color: #0a2540;
+}
+.contact .grid__table .table__header .copy__footer .contact__sale {
+  color: #635bff;
+}
+.contact .grid__table .table__header .copy__footer .contact__sale a {
+  color: #0a2540;
+}
+.contact .grid__table .table__content {
+  padding: 0 16px;
+}
+.contact .grid__table .table__content .icon {
+  width: 40px;
+  height: 35px;
+  background-color: #00d4ff;
+  border-radius: 5px;
+  padding: 5px;
+}
+.contact .grid__table .table__content .title__small {
+  position: relative;
+  color: #0a2540;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+}
+.contact .grid__table .table__content .title__small::before {
+  display: block;
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  content: " ";
+  left: -13px;
+  top: 5px;
+  background-color: #00d4ff;
+}
+.contact .grid__table .table__content .contain__section {
+  color: #425466;
+  font-size: 18px;
+  line-height: 1.555555556;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+.contact .grid__table .table__content .link__section a {
+  color: #635bff;
+  outline: none;
+  transition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  font-weight: 500;
+  display: inline-block;
+}
+.contact .grid__table .table__content .link__section a:hover {
+  color: #0a2540;
+}
+
+@media screen and (min-width: 600px) {
+  .contact .grid__table {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact .grid__table .table__header {
+    grid-area: 1/span 2;
+    padding: 0 64px 0 16px;
+  }
+  .contact .grid__table .table__content {
+    padding: 0 32px 0 16px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .contact .grid__table {
+    grid-template-columns: 2fr repeat(2, 1fr);
+  }
+  .contact .grid__table .table__header {
+    grid-area: unset;
+    padding: 0 112px 0 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .contact .contact__limit {
+    max-width: 1180px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .contact .contact__limit {
+    max-width: 1336px;
+  }
+}
 .footer {
   position: relative;
   width: 100%;
-  margin-top: 300px;
 }
 .footer .contain__footer {
   max-width: 77.22222222vw;

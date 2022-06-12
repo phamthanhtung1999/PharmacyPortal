@@ -151,8 +151,7 @@ a {
     .title {
       letter-spacing: -0.04em;
       line-height: 1.04;
-      margin-top: 100px;
-      font-size: 90px;
+      font-size: 60px;
       font-weight: 700;
       color: #3a3a3a;
     }
@@ -207,11 +206,37 @@ a {
     }
     .copy_imagephone {
       position: relative;
-      margin-left: 100px;
     }
   }
 }
 
+@include ScreenWidth(768px) {
+  .header {
+    .content__header {
+      .content__right {
+        .copy_imagephone {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}
+@include ScreenWidth(900px) {
+  .header {
+    .content__header {
+      .content__left {
+        .title {
+          letter-spacing: -0.04em;
+          line-height: 1.04;
+          margin-top: 100px;
+          font-size: 90px;
+          font-weight: 700;
+          color: #3a3a3a;
+        }
+      }
+    }
+  }
+}
 @include ScreenWidth(1440px) {
   .navBar {
     max-width: 1180px;
