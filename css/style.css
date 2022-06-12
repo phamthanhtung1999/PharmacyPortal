@@ -296,21 +296,6 @@ a {
     margin-left: 100px;
   }
 }
-@media screen and (min-width: 900px) {
-  .header .content__header .content__left .title {
-    letter-spacing: -0.04em;
-    line-height: 1.04;
-    margin-top: 100px;
-    font-size: 90px;
-    font-weight: 700;
-    color: #3a3a3a;
-  }
-
-  .backgroundSkew {
-    top: -10.627828085vw;
-    height: auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .navBar {
     max-width: 90vw;
@@ -319,6 +304,15 @@ a {
 @media screen and (min-width: 900px) {
   .navBar {
     max-width: 77.22222222vw;
+  }
+
+  .header .content__header .content__left .title {
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+    margin-top: 100px;
+    font-size: 90px;
+    font-weight: 700;
+    color: #3a3a3a;
   }
 }
 @media screen and (min-width: 1440px) {

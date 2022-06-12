@@ -231,7 +231,16 @@ a {
     }
   }
 }
+
+@include ScreenWidth(768px) {
+  .navBar {
+    max-width: 90vw;
+  }
+}
 @include ScreenWidth(900px) {
+  .navBar {
+    max-width: calc(100vw * 0.7722222222);
+  }
   .header {
     .content__header {
       .content__left {
@@ -245,20 +254,6 @@ a {
         }
       }
     }
-  }
-  .backgroundSkew {
-    top: calc((0.2125565617 * 50vw) * -1);
-    height: auto;
-  }
-}
-@include ScreenWidth(768px) {
-  .navBar {
-    max-width: 90vw;
-  }
-}
-@include ScreenWidth(900px) {
-  .navBar {
-    max-width: calc(100vw * 0.7722222222);
   }
 }
 @include ScreenWidth(1440px) {
