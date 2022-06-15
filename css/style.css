@@ -874,7 +874,7 @@ a {
   }
 }
 @media screen and (min-width: 1920px) {
-  .technology .globe__content {
+  .globe .globe__content {
     max-width: 1336px;
   }
 }
