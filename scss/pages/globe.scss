@@ -1,12 +1,12 @@
 .globe {
   position: relative;
-  background-color: #0a2540;
+  background-color: #998356;
   .background__skew {
     position: absolute;
     top: calc(0.1051042353 * (100vw / 2) * -1);
     left: 0;
     transform: skewY(-6deg);
-    background-color: #0a2540;
+    background-color: #998356;
     z-index: 10;
     width: 100%;
     height: 100%;
@@ -45,20 +45,20 @@
           padding: 0;
         }
         .globe__caption {
-          color: #00d4ff;
+          color: #111111;
           font-weight: 700;
           font-size: 18px;
           line-height: 1.555555556;
         }
         .globe__label {
-          color: #fff;
+          color: #222222;
           font-weight: 700;
           font-size: 38px;
           letter-spacing: -0.2px;
           line-height: 1.263157895;
         }
         .globe__text {
-          color: #adbdcc;
+          color: #333333;
           font-size: 18px;
           line-height: 1.555555556;
           font-weight: 500;

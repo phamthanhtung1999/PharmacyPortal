@@ -7,13 +7,13 @@
         display: grid;
         row-gap: 24px;
         .caption__section {
-          color: #635bff;
+          color: #111111;
           font-weight: 700;
           font-size: 18px;
           line-height: 1.555555556;
         }
         .title__section {
-          color: #0a2540;
+          color: #222222;
           font-weight: 700;
           font-size: 38px;
           letter-spacing: -0.2px;
@@ -23,7 +23,7 @@
     }
     .body__flatform {
       .txt {
-        color: #425466;
+        color: #333333;
         font-size: 18px;
         line-height: 1.555555556;
         font-weight: 300;
@@ -38,7 +38,7 @@
         }
       }
       .link__button {
-        background-color: #635bff;
+        background-color: #997f4b;
         color: #fff;
         font-weight: 700;
         border-radius: 16.5px;
@@ -46,7 +46,8 @@
         transition: 150ms cubic-bezier(0.215, 0.61, 0.355, 1);
         padding: 6px 12px 6px 16px;
         &:hover {
-          background-color: #0a2540;
+          background-color: #b39964;
+          transform: scale(1.1);
         }
       }
     }

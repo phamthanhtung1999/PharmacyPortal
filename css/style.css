@@ -23,15 +23,16 @@ ul {
 }
 
 .diagonalline__lightblue {
-  background-color: #80e9ff;
+  background-color: #b39964;
 }
 
 .diagonalline__darkblue {
-  background-color: #7073ff;
+  background-color: #997f4b;
+  opacity: 0.7;
 }
 
 .diagonalline__intersection {
-  background-color: #0048e5;
+  background-color: #998356;
   height: 15px;
   width: 100%;
 }
@@ -85,7 +86,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #0a2540;
+  background-color: #998356;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,7 +149,6 @@ a {
   padding: 4px;
 }
 .navBar .navBar__nav .list {
-  color: #fff;
   display: flex;
   list-style-type: none;
   margin: 0px auto;
@@ -157,10 +157,10 @@ a {
   font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: white;
+  color: #777777;
 }
 .navBar .navBar__nav .list .dropdown .dropdown-toggle:hover {
-  opacity: 0.6;
+  color: #b39964;
 }
 .navBar .navBar__nav .list .dropdown .dropdown-toggle::after {
   display: none;
@@ -180,7 +180,7 @@ a {
 }
 .navBar .navBar__nav .button__signup {
   border-radius: 16.5px;
-  background-color: hsla(0deg, 0%, 100%, 0.2);
+  background-color: #997f4b;
   padding: 3px 0 6px;
   transition: all 0.5s;
 }
@@ -189,7 +189,7 @@ a {
   color: white;
 }
 .navBar .navBar__nav .button__signup:hover {
-  background-color: hsla(0deg, 0%, 100%, 0.4);
+  background-color: #b39964;
 }
 .navBar .navBar__nav .button__mobile {
   cursor: pointer;
@@ -265,11 +265,11 @@ a {
   line-height: 1.04;
   font-size: 45px;
   font-weight: 700;
-  color: #3a3a3a;
+  color: #222222;
 }
 .content__header .content__left .copy__body {
   font-size: 18px;
-  color: #425466;
+  color: #333333;
   font-weight: 300;
   letter-spacing: 0.2px;
 }
@@ -289,13 +289,19 @@ a {
   transform: scale(1.1);
 }
 .content__header .content__left .copy__footer .start__now {
-  background-color: #0a2540;
+  background-color: #997f4b;
 }
 .content__header .content__left .copy__footer .start__now a {
   color: white;
 }
+.content__header .content__left .copy__footer .start__now:hover {
+  background-color: #b39964;
+}
 .content__header .content__left .copy__footer .contact__sale a {
-  color: #0a2540;
+  color: #222222;
+}
+.content__header .content__left .copy__footer .contact__sale:hover a {
+  color: #b39964;
 }
 .content__header .content__right {
   padding-top: 60px;
@@ -346,7 +352,7 @@ a {
     margin-top: 100px;
     font-size: 90px;
     font-weight: 700;
-    color: #3a3a3a;
+    color: #222222;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -377,20 +383,20 @@ a {
   row-gap: 24px;
 }
 .platform .platform__content .header__flatform .wrap__flatform .caption__section {
-  color: #635bff;
+  color: #111111;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.555555556;
 }
 .platform .platform__content .header__flatform .wrap__flatform .title__section {
-  color: #0a2540;
+  color: #222222;
   font-weight: 700;
   font-size: 38px;
   letter-spacing: -0.2px;
   line-height: 1.263157895;
 }
 .platform .platform__content .body__flatform .txt {
-  color: #425466;
+  color: #333333;
   font-size: 18px;
   line-height: 1.555555556;
   font-weight: 300;
@@ -405,7 +411,7 @@ a {
   color: #0a2540;
 }
 .platform .platform__content .body__flatform .link__button {
-  background-color: #635bff;
+  background-color: #997f4b;
   color: #fff;
   font-weight: 700;
   border-radius: 16.5px;
@@ -414,7 +420,8 @@ a {
   padding: 6px 12px 6px 16px;
 }
 .platform .platform__content .body__flatform .link__button:hover {
-  background-color: #0a2540;
+  background-color: #b39964;
+  transform: scale(1.1);
 }
 .platform .platform__content .footer__flatform .grid__table {
   display: grid;
@@ -662,13 +669,13 @@ a {
   padding: 0;
 }
 .technology__content .gridRow .technology__header .tecnology__caption {
-  color: #00d4ff;
+  color: #111111;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.555555556;
 }
 .technology__content .gridRow .technology__header .technology__label {
-  color: #0a2540;
+  color: #222222;
   font-weight: 700;
   font-size: 38px;
   letter-spacing: -0.2px;
@@ -682,13 +689,13 @@ a {
 .technology__content .gridRow .gridColumn .icon {
   width: 50px;
   height: 45px;
-  background-color: #00d4ff;
+  background-color: #b39964;
   border-radius: 5px;
   padding: 5px;
 }
 .technology__content .gridRow .gridColumn .title__small {
   position: relative;
-  color: #0a2540;
+  color: #777777;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: -0.2px;
@@ -701,10 +708,10 @@ a {
   content: " ";
   left: -13px;
   top: 5px;
-  background-color: #00d4ff;
+  background-color: #997f4b;
 }
 .technology__content .gridRow .gridColumn .contain__section {
-  color: #425466;
+  color: #333333;
   font-size: 18px;
   line-height: 1.555555556;
   font-weight: 500;
@@ -732,7 +739,7 @@ a {
     padding: 0 64px 0 16px;
   }
   .technology__content .gridRow .gridColumn {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 @media screen and (min-width: 1440px) {
@@ -747,14 +754,14 @@ a {
 }
 .globe {
   position: relative;
-  background-color: #0a2540;
+  background-color: #998356;
 }
 .globe .background__skew {
   position: absolute;
   top: -5.255211765vw;
   left: 0;
   transform: skewY(-6deg);
-  background-color: #0a2540;
+  background-color: #998356;
   z-index: 10;
   width: 100%;
   height: 100%;
@@ -795,20 +802,20 @@ a {
   padding: 0;
 }
 .globe .globe__content .gridRow .globe__header .globe__caption {
-  color: #00d4ff;
+  color: #111111;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.555555556;
 }
 .globe .globe__content .gridRow .globe__header .globe__label {
-  color: #fff;
+  color: #222222;
   font-weight: 700;
   font-size: 38px;
   letter-spacing: -0.2px;
   line-height: 1.263157895;
 }
 .globe .globe__content .gridRow .globe__header .globe__text {
-  color: #adbdcc;
+  color: #333333;
   font-size: 18px;
   line-height: 1.555555556;
   font-weight: 500;

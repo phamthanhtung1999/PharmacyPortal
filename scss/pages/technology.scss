@@ -29,13 +29,13 @@
         padding: 0;
       }
       .tecnology__caption {
-        color: #00d4ff;
+        color: #111111;
         font-weight: 700;
         font-size: 18px;
         line-height: 1.555555556;
       }
       .technology__label {
-        color: #0a2540;
+        color: #222222;
         font-weight: 700;
         font-size: 38px;
         letter-spacing: -0.2px;
@@ -49,13 +49,13 @@
       .icon {
         width: 50px;
         height: 45px;
-        background-color: #00d4ff;
+        background-color: #b39964;
         border-radius: 5px;
         padding: 5px;
       }
       .title__small {
         position: relative;
-        color: #0a2540;
+        color: #777777;
         font-weight: 500;
         font-size: 15px;
         letter-spacing: -0.2px;
@@ -67,11 +67,11 @@
           content: ' ';
           left: -13px;
           top: 5px;
-          background-color: #00d4ff;
+          background-color: #997f4b;
         }
       }
       .contain__section {
-        color: #425466;
+        color: #333333;
         font-size: 18px;
         line-height: 1.555555556;
         font-weight: 500;
@@ -109,7 +109,7 @@
         }
       }
       .gridColumn {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
     }
   }
