@@ -110,6 +110,7 @@ a {
       .list__mobile {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         .item__mobile {
           padding: 5px 10px;
           margin: 0 0 20px 0;
@@ -234,6 +235,17 @@ a {
       .content__right {
         .copy_imagephone {
           margin-left: 100px;
+        }
+      }
+    }
+  }
+}
+@include ScreenWidth(506px) {
+  .navBar {
+    .navBar__nav {
+      .content__mobile {
+        .list__mobile {
+          justify-content: space-between;
         }
       }
     }

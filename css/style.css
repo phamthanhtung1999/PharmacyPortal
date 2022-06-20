@@ -223,6 +223,7 @@ a {
 .navBar .navBar__nav .content__mobile .list__mobile {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .navBar .navBar__nav .content__mobile .list__mobile .item__mobile {
   padding: 5px 10px;
@@ -334,6 +335,11 @@ a {
   }
   .header .content__header .content__right .copy_imagephone {
     margin-left: 100px;
+  }
+}
+@media screen and (min-width: 506px) {
+  .navBar .navBar__nav .content__mobile .list__mobile {
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1023,7 +1029,7 @@ a {
   width: 100%;
   position: absolute;
   height: 100%;
-  background-color: #998356;
+  background-color: #cbba97;
   top: -5.255211765vw;
   transform: skewY(-6deg);
   z-index: 10;
@@ -1039,7 +1045,7 @@ a {
   height: 50%;
 }
 .footer .transparent__footer div:last-child {
-  background-color: #998356;
+  background-color: #cbba97;
 }
 .footer .contain__footer {
   max-width: 77.22222222vw;
