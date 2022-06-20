@@ -4,21 +4,21 @@
   .skew__topright {
     position: absolute;
     z-index: 20;
-    top: (calc(100vw * -0.1051042353) / 2);
+    top: calc(((100vw * 0.1051042353) * -1) / 2);
     background-color: white;
     height: 65px;
   }
   .skew__bottomleft {
     position: absolute;
     z-index: 20;
-    top: (calc(100vw * -0.1051042353) / 2);
+    top: calc(((100vw * 0.1051042353) * -1) / 2);
   }
   .skew__footer {
     width: 100%;
     position: absolute;
     height: 100%;
     background-color: #998356;
-    top: (calc((100vw * -0.1051042353) / 2) + 0.1);
+    top: calc(((100vw * 0.1051042353) * -1) / 2) + 0.1;
     transform: skewY(-6deg);
     z-index: 10;
   }
