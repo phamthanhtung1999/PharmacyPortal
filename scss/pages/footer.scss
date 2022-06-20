@@ -1,7 +1,40 @@
 .footer {
   position: relative;
   width: 100%;
-
+  .skew__topright {
+    position: absolute;
+    z-index: 20;
+    top: (calc(100vw * -0.1051042353) / 2);
+    background-color: white;
+    height: 65px;
+  }
+  .skew__bottomleft {
+    position: absolute;
+    z-index: 20;
+    top: (calc(100vw * -0.1051042353) / 2);
+  }
+  .skew__footer {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background-color: #998356;
+    top: (calc(100vw * -0.1051042353) / 2);
+    transform: skewY(-6deg);
+    z-index: 10;
+  }
+  .transparent__footer {
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    div {
+      height: 50%;
+    }
+    div:last-child {
+      background-color: #998356;
+    }
+  }
   .contain__footer {
     max-width: calc(100vw * 0.7722222222);
     padding: 125px 0 64px;
@@ -9,6 +42,8 @@
     margin: auto;
     grid: auto/repeat(2, 1fr);
     row-gap: 20px;
+    position: relative;
+    z-index: 50;
     .contain__item {
       display: grid;
       row-gap: 20px;
