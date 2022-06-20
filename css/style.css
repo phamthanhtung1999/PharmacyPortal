@@ -904,11 +904,11 @@ a {
   line-height: 1.04;
   font-size: 24px;
   font-weight: 500;
-  color: #0a2540;
+  color: #222222;
 }
 .contact .grid__table .table__header .copy__body {
   font-size: 18px;
-  color: #425466;
+  color: #333333;
   font-weight: 300;
   letter-spacing: 0.2px;
 }
@@ -988,30 +988,9 @@ a {
   color: #0a2540;
 }
 
-@media screen and (min-width: 600px) {
-  .contact .grid__table {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .contact .grid__table .table__header {
-    grid-area: 1/span 2;
-    padding: 0 64px 0 16px;
-  }
-  .contact .grid__table .table__content {
-    padding: 0 32px 0 16px;
-  }
-}
 @media screen and (min-width: 768px) {
   .contact .contact__limit {
     padding: 128px 0 300px 0;
-  }
-}
-@media screen and (min-width: 900px) {
-  .contact .grid__table {
-    grid-template-columns: 2fr repeat(2, 1fr);
-  }
-  .contact .grid__table .table__header {
-    grid-area: unset;
-    padding: 0 112px 0 16px;
   }
 }
 @media screen and (min-width: 1440px) {
