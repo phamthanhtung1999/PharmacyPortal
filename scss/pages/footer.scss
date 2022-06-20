@@ -17,8 +17,8 @@
     width: 100%;
     position: absolute;
     height: 100%;
-    background-color: #cbba97;
-    top: (calc(100vw * -0.1051042353) / 2);
+    background-color: #998356;
+    top: (calc((100vw * -0.1051042353) / 2) + 0.1);
     transform: skewY(-6deg);
     z-index: 10;
   }
@@ -32,7 +32,7 @@
       height: 50%;
     }
     div:last-child {
-      background-color: #cbba97;
+      background-color: #998356;
     }
   }
   .contain__footer {
@@ -56,16 +56,16 @@
         margin-bottom: 8px;
         font-size: 15px;
         font-weight: 700;
-        color: #0a2540;
+        color: white;
       }
       .item {
         margin: 4px 0;
         display: flex;
         align-items: center;
         font-size: 15px;
-        color: #0a2540;
+        color: white;
         a {
-          color: #0a2540;
+          color: white;
         }
       }
     }
@@ -78,6 +78,7 @@
 @include ScreenWidth(768px) {
   .footer {
     .contain__footer {
+      grid-template-columns: repeat(4, 1fr);
       padding: 250px 0 128px;
     }
   }
@@ -86,7 +87,7 @@
   .footer {
     .contain__footer {
       max-width: 1180px;
-      grid-template-columns: repeat(4, 1fr);
+
       .contain__item {
         grid: min-content/auto;
         grid: -webkit-min-content/auto;

@@ -157,7 +157,7 @@ a {
   font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
   font-weight: bold;
   font-size: 15px;
-  color: #777777;
+  color: #fff;
 }
 .navBar .navBar__nav .list .dropdown .dropdown-toggle:hover {
   color: #b39964;
@@ -291,6 +291,7 @@ a {
 }
 .content__header .content__left .copy__footer .start__now {
   background-color: #997f4b;
+  margin-right: 20px;
 }
 .content__header .content__left .copy__footer .start__now a {
   color: white;
@@ -381,7 +382,7 @@ a {
   }
 }
 .platform {
-  background-color: #f6f9fc;
+  background-color: #b39964;
   font-family: "sohne-var", "Helvetica Neue", "Arial", sans-serif;
 }
 .platform .platform__content .header__flatform .wrap__flatform {
@@ -389,20 +390,20 @@ a {
   row-gap: 24px;
 }
 .platform .platform__content .header__flatform .wrap__flatform .caption__section {
-  color: #111111;
+  color: #fff;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.555555556;
 }
 .platform .platform__content .header__flatform .wrap__flatform .title__section {
-  color: #222222;
+  color: #fff;
   font-weight: 700;
   font-size: 38px;
   letter-spacing: -0.2px;
   line-height: 1.263157895;
 }
 .platform .platform__content .body__flatform .txt {
-  color: #333333;
+  color: #fff;
   font-size: 18px;
   line-height: 1.555555556;
   font-weight: 300;
@@ -426,7 +427,6 @@ a {
   padding: 6px 12px 6px 16px;
 }
 .platform .platform__content .body__flatform .link__button:hover {
-  background-color: #b39964;
   transform: scale(1.1);
 }
 .platform .platform__content .footer__flatform .grid__table {
@@ -808,20 +808,20 @@ a {
   padding: 0;
 }
 .globe .globe__content .gridRow .globe__header .globe__caption {
-  color: #111111;
+  color: #fff;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.555555556;
 }
 .globe .globe__content .gridRow .globe__header .globe__label {
-  color: #222222;
+  color: #fff;
   font-weight: 700;
   font-size: 38px;
   letter-spacing: -0.2px;
   line-height: 1.263157895;
 }
 .globe .globe__content .gridRow .globe__header .globe__text {
-  color: #333333;
+  color: #fff;
   font-size: 18px;
   line-height: 1.555555556;
   font-weight: 500;
@@ -1029,8 +1029,8 @@ a {
   width: 100%;
   position: absolute;
   height: 100%;
-  background-color: #cbba97;
-  top: -5.255211765vw;
+  background-color: #998356;
+  top: -5.155211765vw;
   transform: skewY(-6deg);
   z-index: 10;
 }
@@ -1045,7 +1045,7 @@ a {
   height: 50%;
 }
 .footer .transparent__footer div:last-child {
-  background-color: #cbba97;
+  background-color: #998356;
 }
 .footer .contain__footer {
   max-width: 77.22222222vw;
@@ -1070,17 +1070,17 @@ a {
   margin-bottom: 8px;
   font-size: 15px;
   font-weight: 700;
-  color: #0a2540;
+  color: white;
 }
 .footer .contain__footer .contain__item .item {
   margin: 4px 0;
   display: flex;
   align-items: center;
   font-size: 15px;
-  color: #0a2540;
+  color: white;
 }
 .footer .contain__footer .contain__item .item a {
-  color: #0a2540;
+  color: white;
 }
 .footer .contain__footer .contain__item:first-child {
   grid: min-content/auto;
@@ -1089,13 +1089,13 @@ a {
 
 @media screen and (min-width: 768px) {
   .footer .contain__footer {
+    grid-template-columns: repeat(4, 1fr);
     padding: 250px 0 128px;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer .contain__footer {
     max-width: 1180px;
-    grid-template-columns: repeat(4, 1fr);
   }
   .footer .contain__footer .contain__item {
     grid: min-content/auto;

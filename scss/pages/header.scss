@@ -44,7 +44,7 @@ a {
         font-family: 'sohne-var', 'Helvetica Neue', 'Arial', sans-serif;
         font-weight: bold;
         font-size: 15px;
-        color: #777777;
+        color: #fff;
         &:hover {
           color: #b39964;
         }
@@ -180,6 +180,7 @@ a {
       }
       .start__now {
         background-color: #997f4b;
+        margin-right: 20px;
         a {
           color: white;
         }
