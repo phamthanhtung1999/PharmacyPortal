@@ -32,13 +32,13 @@
     margin: 0 auto;
     padding: 125px 0;
     .gridRow {
-      display: grid;
-      grid: auto/minmax(0, 1fr);
-      row-gap: 64px;
+      // display: grid;
+      // grid: auto/minmax(0, 1fr);
+      // row-gap: 64px;
       align-items: flex-start;
       .globe__header {
-        display: grid;
-        row-gap: 32px;
+        // display: grid;
+        // row-gap: 32px;
 
         align-items: flex-start;
         .padding__header {
@@ -118,7 +118,7 @@
   .globe__content {
     .gridRow {
       .globe__header {
-        grid-template-columns: 2fr 2fr;
+        // grid-template-columns: 2fr 2fr;
         .padding__header {
           padding: 0 64px 0 16px;
         }
@@ -132,14 +132,16 @@
 @include ScreenWidth(1440px) {
   .globe {
     .globe__content {
-      max-width: 1180px;
+      margin-left: calc((100vw - 1180px) / 2);
+      max-width: calc(1180px / 2);
     }
   }
 }
 @include ScreenWidth(1920px) {
   .globe {
     .globe__content {
-      max-width: 1336px;
+      margin-left: calc((100vw - 1336px) / 2);
+      max-width: calc(1336px / 2);
     }
   }
 }
