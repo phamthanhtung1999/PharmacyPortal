@@ -759,24 +759,21 @@ a {
 }
 .globe {
   position: relative;
-  background-color: #998356;
 }
 .globe .background__skew {
   position: absolute;
-  top: -5.255211765vw;
   left: 0;
-  transform: skewY(-6deg);
-  background-color: #998356;
+  background-color: blue;
+  clip-path: polygon(0% 10.51042353vw, 100% 0%, 100% 100%, 0% 100%);
   z-index: 10;
   width: 100%;
   height: 100%;
 }
-.globe .background__skew .skew__bottomleft {
-  transform: skewY(0deg);
+.globe .skew__bottomleft {
   z-index: 10;
   background-color: white;
   position: absolute;
-  top: -65px;
+  top: calc(5.255211765vw - 65px);
 }
 .globe .particles {
   position: absolute;
@@ -854,14 +851,9 @@ a {
   letter-spacing: 0.2px;
 }
 
-@media screen and (min-width: 600px) {
-  .globe__content .gridRow .gridColumn {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 @media screen and (min-width: 768px) {
-  .globe__content {
-    padding: 255px 0;
+  .globe .globe__content {
+    padding: 10.51042353vw 0;
   }
 }
 @media screen and (min-width: 900px) {
